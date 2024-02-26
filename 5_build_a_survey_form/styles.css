@@ -8,8 +8,13 @@ body {
   background-size: 100% 115%;
 }
 
-#title, #description {
-  margin: 1em auto;
+#title {
+  margin: 0.75em auto;
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
   text-align: center;
 }
 
@@ -23,12 +28,7 @@ body {
 
 fieldset {
   border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid rgba(245, 246, 247, 0.23);
-}
-
-fieldset:last-of-type {
-  border-bottom: none;
+  padding: 0.75rem 0;
 }
 
 label {
@@ -36,10 +36,26 @@ label {
   margin: 0.5rem 0;
 }
 
+#qualities, #boons {
+  margin-bottom: 1em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  display: inline;
+}
+
+.qualities, .boons {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
 input,
-textarea,
+textarea, 
 select {
-  margin: 10px 0 0 0;
+  margin: 10px 0;
   width: 100%;
   min-height: 2em;
   border-radius: 5px;
@@ -55,21 +71,13 @@ select:hover {
   background-color: rgba(10, 10, 35, 0.75);
 }
 
-
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
-  display: inline; 
-}
-
 input[type="submit"] {
   display: block;
   width: 60%;
-  margin: 1em auto;
+  margin: 2em auto;
   height: 2em;
   font-size: 1.1rem;
-  background-color: /*rgba(45, 149, 150, 0.85)*/ rgba(50, 200, 175, 0.60) ;
+  background-color: rgba(50, 200, 175, 0.60) ;
   border-color: rgba(255, 255, 255, 0.75);
   min-width: 300px;
   color: rgba(255, 255, 255, 0.75);
@@ -78,7 +86,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   font-size: 1.1rem;
-  background-color: /*rgba(45, 149, 150, 0.85)*/ rgba(50, 200, 175, 0.9) ;
+  background-color: rgba(50, 200, 175, 0.9) ;
   border-color: rgba(255, 255, 255, 0.9);
   color: rgba(255, 255, 255, 0.9);
   font-weight: bolder;
@@ -87,3 +95,4 @@ input[type="submit"]:hover {
 a {
   color: rgba(255, 255, 255, 0.75);
 }
+
