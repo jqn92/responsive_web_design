@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acolyte Pact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Acolyte Pact</h1>
+  <p id="description">Present yourself before the Lord of R'lyeh! </p>
+  <form id="survey-form" method="post" action="https://cthulhu-form.greatoldone.xyz">
+    <fieldset>
+      <label for="name" id="name-label">Identify yourself! <input id="name" name="name" type="text"
+          placeholder="Enter your name" required /></label>
+      <label for="dropdown" id="dropwdown-label">State your lesser lineage!
+        <select id="dropdown" name="dropdown">
+          <option value="">Choose one</option>
+          <option value="1">Human scum</option>
+          <option value="2">Deep One scum</option>
+          <option value="3">Mi-Go scum</option>
+          <option value="4">Different type of scum</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="email" id="email-label">Point towards the ethereal channel!
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+      </label>
+      <label for="new-password" id="password-label">Quick! Articulate the secret symbols!
+        <input id="new-password" name="new-password" type="password" pattern="[a-zA-z0-9]{8,}"
+          placeholder="Enter your password" required />
+      </label>
+    </fieldset>
+    <label for="number" id="number-label">What is your heathen count so far? <input id="number" name="number"
+        type="number" min="10" max="99999" placeholder="Converted or..." /></label>
+    <fieldset>
+      <legend>Pray tell the boon Lord Cthulhu <em>may</em> grant you in exchange for your first born</legend>
+      <label for="slimy-boon"><input id="slimy-boon" type="radio" name="boon" class="inline" checked /> Unending
+        sliminess</label>
+      <label for="fishy-boon"><input id="fishy-boon" type="radio" name="boon" class="inline" /> Graceful fish
+        face</label>
+      <label for="webbed-boon"><input id="webbed-boon" type="radio" name="boon" class="inline" /> Majestic webbed
+        paws</label>
+      <label for="tentacle-boon"><input id="tentacle-boon" type="radio" name="boon"
+          class="inline" /> Classy tentacle moustache</label>
+      <label for="vows"> Renew your vows to the Dreamer of R'lyeh!
+        <textarea id="vows" name="vows" rows="3" cols="30"
+          placeholder="I submit my inconsequential existence in servitude of the grandeur of Lord Cthulhu and promise to..."></textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Profess which qualities from the Great Old One you worship with the deepest reverence:
+        <label for="terms-and-conditions">
+          <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="1" /> His
+          gargantuesque stature</label>
+        <label for="terms-and-conditions">
+          <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="2" /> The
+          inexorability of the punishments he administers the unbelievers </label>
+        <label for="terms-and-conditions">
+          <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="3" /> His
+          all-encompassing cognizance</label>
+        <label for="terms-and-conditions">
+          <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="4" /> The
+          profoundness of his architectural taste</label>
+    </fieldset>
+    <label for="concerns"> Voice any concerns you have!
+      <textarea id="concerns" name="concerns" rows="3" cols="30" disabled></textarea>
+      <label for="demonic-contract">
+        <input class="inline" id="demonic-contract" type="checkbox" required name="demonic-contract" /> Check to feign
+        free will and make sure <strong>not</strong> to read <a href="https://www.greatoldone.xyz/demonic-contract/">the
+          terms of the pact</a>!
+      </label>
+      <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
