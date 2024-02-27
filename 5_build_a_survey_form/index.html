@@ -41,13 +41,13 @@
     </fieldset>
     <fieldset>
       <label for="boons">Pray tell the boon Lord Cthulhu <em>may</em> grant you in exchange for your first born:</label>
-      <label for="slimy-boon" class="boons"><input id="slimy-boon" type="radio" name="boon" class="inline" checked /> Unending
+      <label for="slimy-boon" class="boons"><input id="slimy-boon" type="radio" value="1" name="boon" class="inline" checked /> Unending
         sliminess</label>
-      <label for="fishy-boon" class="boons"><input id="fishy-boon" type="radio" name="boon" class="inline" /> Graceful fish
+      <label for="fishy-boon" class="boons"><input id="fishy-boon" type="radio" value="2" name="boon" class="inline" /> Graceful fish
         face</label>
-      <label for="webbed-boon" class="boons"><input id="webbed-boon" type="radio" name="boon" class="inline" /> Majestic webbed
+      <label for="webbed-boon" class="boons"><input id="webbed-boon" type="radio" value="3" name="boon" class="inline" /> Majestic webbed
         paws</label>
-      <label for="tentacle-boon" class="boons"><input id="tentacle-boon" type="radio" name="boon"
+      <label for="tentacle-boon" class="boons"><input id="tentacle-boon" type="radio" value="4" name="boon"
           class="inline" /> Classy tentacle moustache</label>
     </fieldset>
     <fieldset>
@@ -60,12 +60,12 @@
       <label for="concerns">Voice any concerns you have!
         <textarea id="concerns" name="concerns" rows="5" cols="30" disabled></textarea>
         <label for="demonic-contract">
-          <input class="inline" id="demonic-contract" type="checkbox" required name="demonic-contract" /> None? Good! Now, check to feign
+          <input class="inline" id="demonic-contract" type="checkbox" value="5" required name="demonic-contract" /> None? Good! Now, check to feign
           free will and make sure <strong>not</strong> to read <a href="https://www.greatoldone.xyz/demonic-contract/">the
           terms of the pact</a>!
       </label>
     </fieldset>
-    <input type="submit" value="Submit" />
+    <input id="submit" type="submit" value="Submit" />
   </form>
 </body>
 </html>
